@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Form Filler</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Nomination Form Filler</h2>
+
+    <label for="nomineeName">Nominee 1 - Name</label>
+    <input type="text" id="nomineeName" placeholder="Enter full name" />
+
+    <label for="nomineeNRIC">Nominee 1 - NRIC</label>
+    <input type="text" id="nomineeNRIC" placeholder="Enter NRIC or Passport No" />
+
+    <label for="nomineeDOB">Nominee 1 - Date of Birth</label>
+    <input type="date" id="nomineeDOB" />
+
+    <label for="ownerName">Policy Owner - Name</label>
+    <input type="text" id="ownerName" placeholder="Enter policy owner's name" />
+
+    <label for="ownerNRIC">Policy Owner - NRIC</label>
+    <input type="text" id="ownerNRIC" placeholder="Enter policy owner's NRIC" />
+
+    <button onclick="fillPDF()">Generate PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
